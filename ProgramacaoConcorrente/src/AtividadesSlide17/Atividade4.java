@@ -14,6 +14,7 @@ import java.util.logging.Logger;
  */
 public class Atividade4 implements Runnable{
     
+    @Override
     public void run(){
         new Thread( () -> {
             System.out.println("The Thread.");
