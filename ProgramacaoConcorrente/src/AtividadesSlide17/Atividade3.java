@@ -1,29 +1,32 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Programação Concorrente
+Aluno: Mateus Tomoo Yonemoto Peixoto
+RA: 1602055
+
+    Atividade 3. Faça um programa Java que envia interrupções para as
+threads dos exercícios anteriores. As threads devem fazer o
+tratamento dessas interrup¸c˜oes e realizar uma finalização
+limpa.
+
  */
 package AtividadesSlide17;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author Mateu
- */
-public class Atividade3 extends Thread{
-    
+public class Atividade3 extends Thread {
+
     @Override
-    public void run(){
+    public void run() {
         try {
             Thread.sleep(3000);
         } catch (InterruptedException ex) {
             System.out.println("era pra estar interrompendo");
             Logger.getLogger(Atividade3.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
     }
+
     public static void main(String[] args) {
         Thread thread = new Thread(new Atividade2());
         thread.start();
