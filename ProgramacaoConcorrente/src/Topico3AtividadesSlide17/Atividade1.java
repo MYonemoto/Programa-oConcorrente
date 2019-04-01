@@ -7,7 +7,7 @@ RA: 1602055
 thread, espere um tempo aleatório para terminar.
 
  */
-package AtividadesSlide17;
+package Topico3AtividadesSlide17;
 
 import java.util.Random;
 import java.util.logging.Level;

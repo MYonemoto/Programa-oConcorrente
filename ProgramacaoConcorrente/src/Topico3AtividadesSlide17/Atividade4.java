@@ -7,7 +7,7 @@ RA: 1602055
 exiba quais threads receberam sinais de interrupção.
 
  */
-package AtividadesSlide17;
+package Topico3AtividadesSlide17;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

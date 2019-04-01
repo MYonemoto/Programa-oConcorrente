@@ -7,7 +7,7 @@ RA: 1602055
     numérica de tamanho arbitrário digitado por usuário para
     realizar uma soma. Use o join().
  */
-package AtividadesSlide17;
+package Topico3AtividadesSlide17;
 
 import java.util.Scanner;
 import java.util.logging.Level;

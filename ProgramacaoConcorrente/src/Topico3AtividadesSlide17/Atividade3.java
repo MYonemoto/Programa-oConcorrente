@@ -9,7 +9,7 @@ tratamento dessas interrup¸c˜oes e realizar uma finalização
 limpa.
 
  */
-package AtividadesSlide17;
+package Topico3AtividadesSlide17;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

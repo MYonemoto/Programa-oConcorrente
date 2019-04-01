@@ -7,7 +7,7 @@ RA: 1602055
 texto com frases e exiba as frases a cada 10 segundos.
 
  */
-package AtividadesSlide17;
+package Topico3AtividadesSlide17;
 
 import java.io.IOException;
 import java.nio.file.Files;
