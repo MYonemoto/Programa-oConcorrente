@@ -16,16 +16,13 @@ public class Atividade4 implements Runnable {
 
     @Override
     public void run() {
-        new Thread(() -> {
-            System.out.println("The Thread.");
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(Atividade4.class.getName()).log(Level.SEVERE, null, ex);
-                System.out.println("Interrupted.");
-            }
-        }).start();
-
+        System.out.println("The Thread.");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(Atividade4.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }
 
     public static void main(String[] args) {

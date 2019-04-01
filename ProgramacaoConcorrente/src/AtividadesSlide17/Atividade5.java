@@ -23,9 +23,7 @@ public class Atividade5 implements Runnable {
 
     @Override
     public void run() {
-        new Thread(() -> {
-
-            Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
             System.out.println("Iniciando a Thread... ");
 
@@ -50,7 +48,6 @@ public class Atividade5 implements Runnable {
                 Logger.getLogger(Atividade4.class.getName()).log(Level.SEVERE, null, ex);
                 System.out.println("Interrupted.");
             }
-        }).start();
     }
 
     public static void main(String[] args) {
@@ -62,5 +59,6 @@ public class Atividade5 implements Runnable {
         } catch (InterruptedException ex) {
             Logger.getLogger(Atividade5.class.getName()).log(Level.SEVERE, null, ex);
         }
+        System.out.println("aaaaaaaaaaaaa");
     }
 }

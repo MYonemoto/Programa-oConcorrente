@@ -29,14 +29,15 @@ public class Atividade2 implements Runnable {
         } catch (IOException ex) {
             Logger.getLogger(Atividade2.class.getName()).log(Level.SEVERE, null, ex);
         }
-        new Thread(() -> linhas.forEach(i -> {
+        linhas.forEach((i) -> {
             System.out.println(i);
             try {
                 Thread.sleep(10000);
             } catch (InterruptedException ex) {
                 Logger.getLogger(Atividade2.class.getName()).log(Level.SEVERE, null, ex);
             }
-        })).start();
+        });
+
     }
 
     public static void main(String[] args) {
