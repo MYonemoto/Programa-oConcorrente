@@ -52,10 +52,11 @@ public class Atividade4 implements Runnable {
     private static Object[] getArray(int totalElementos) {
         List<Integer> lista = new ArrayList<Integer>();
         Random rand = new Random();
-        while (lista.size() <= totalElementos) {
-            Integer num = rand.nextInt(totalElementos);
+        for (int i = 0; i < totalElementos; i++) {
+            Integer num = i;
             lista.add(num);
         }
+
         return lista.toArray();
     }
     
@@ -94,8 +95,8 @@ public class Atividade4 implements Runnable {
         //valores fixos para a quantidade de elementos do vetor, quantidade de threads
         //e o elemento procurado
         final int QUANTIDADE_ITENS = 20000;
-        final int QTD_THREADS = 1;
-        final int VALOR_PROCURADO = 2;
+        final int QTD_THREADS = 2;
+        final int VALOR_PROCURADO = 50;
 
         Object[] array = getArray(QUANTIDADE_ITENS);
 
