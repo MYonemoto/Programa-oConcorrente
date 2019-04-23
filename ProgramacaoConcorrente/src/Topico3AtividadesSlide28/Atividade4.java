@@ -21,7 +21,7 @@ public class Atividade4 implements Runnable {
     private int inicio, fim;
     
     //construtor
-    //inicio e fim equivale ao começo e final do vetor
+    //inicio e fim equivalem ao começo e final do vetor
     Atividade4(Object[] array, Object target, int inicio, int fim) {
         this.array = array;
         this.target = target;
@@ -39,8 +39,6 @@ public class Atividade4 implements Runnable {
                         + "' achado na posição " + i + " pela thread '"
                         + Thread.currentThread().getName() + "'"
                         );
-                // Matar as outras threads do grupo, opcional.
-                // Thread.currentThread().getThreadGroup().interrupt();
                 return;
             }
         }
