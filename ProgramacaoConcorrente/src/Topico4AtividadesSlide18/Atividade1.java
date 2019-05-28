@@ -25,13 +25,13 @@ public class Atividade1 implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("teste");
+//        System.out.println("teste");
         List<Integer> numeros = new ArrayList<Integer>();
         List<Integer> numerosPrimos = new ArrayList<Integer>();
         for (int i = inicio; i < fim; i++) {
             numeros.add(i);
         }
-        System.out.println("asfasfas");
+//        System.out.println("asfasfas");
         int contador;
         int countPrimo = 0;
         int numero = 0;
@@ -45,22 +45,29 @@ public class Atividade1 implements Runnable {
                 }
             }
             if (contador == 2) {
+                System.out.println("primao " + numero);
                 countPrimo++;
             }
         }
-        System.out.println(countPrimo);
+//        System.out.println(countPrimo);
     }
 
     private static void countPrimo(int inicio, int fim, int qtdThreads) {
         int itensPorThread = 1;
 
         List<Thread> threadList = new ArrayList<Thread>();
+        ThreadGroup group = new ThreadGroup("ThreadGroup Busca");
 
         for (int i = 0; i < qtdThreads; i++) {
             threadList.add(new Thread("T" + i));
             inicio = ++fim;
             fim += itensPorThread;
+        Runnable runnable = new Atividade1(inicio, fim);
+            threadList.add(new Thread(group, runnable, "T" + i));
+            inicio = ++fim;
+            fim += itensPorThread;
         }
+        
 
         start(threadList);
     }
