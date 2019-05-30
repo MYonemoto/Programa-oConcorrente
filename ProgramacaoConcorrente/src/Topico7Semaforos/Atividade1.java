@@ -15,32 +15,37 @@ import java.util.logging.Logger;
 
 public class Atividade1 {
     
-    Semaphore semaphore = new Semaphore(1);
-    WhateverThread t1;
-    WhateverThread t2;
-    
-    public Atividade1(){
-        this.t1 = new WhateverThread(this, "Thread 1");
-        this.t2 = new WhateverThread(this, "Thread 2");
-    }
-    
-    public void sinal(String msg){
-        try {
-            this.semaphore.acquire();
-        } catch (InterruptedException ex) {
-            Logger.getLogger(Atividade1.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        System.out.println(msg);
-        this.semaphore.release();
-    }
-    
-    public void init(){
-        this.t1.start();
-        this.t2.start();
-    }
-    
     public static void main(String[] args) {
-        Atividade1 atv1 = new Atividade1();
-        atv1.init();
+        ThreadB b = new ThreadB();
+        b.start();
+
+        synchronized (b) {
+            try {
+                System.out.println("Thread2: Waiting for a sign...");
+                b.wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("Thread2: Finally I can run!");
+        }
+    }
+}
+
+class ThreadB extends Thread {
+
+    Semaphore sem = new Semaphore(1);
+    
+    @Override
+    public void run() {
+        synchronized (this) {
+            try {
+                sem.acquire();
+            } catch (InterruptedException ex) {
+                Logger.getLogger(ThreadB.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            System.out.println("Thread1: Sending sign...");
+            sem.release();
+            notify();
+        }
     }
 }
