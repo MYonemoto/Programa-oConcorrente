@@ -20,12 +20,12 @@ class Philosopher implements Runnable {
     public void run() {
         while (true) {
             try {
-                System.out.println("Phil " + id + " thinking");
+                System.out.println("Philosopher " + id + " thinking");
                 Thread.sleep(3000);
-                System.out.println("Phil " + id + " hungry");
+                System.out.println("Philosopher " + id + " hungry");
                 fork.pickup(id);
-                System.out.println("Phil " + id + " eating");
-                Thread.sleep(4000);
+                System.out.println("Philosopher " + id + " eating");
+                Thread.sleep(5000);
                 fork.drop(id);
             } catch (InterruptedException e) {
                 return;

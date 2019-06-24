@@ -3,10 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Mateu/Desktop/UTFPR-BCC/Programação%20Concorrente/Programa-oConcorrente/ProgramacaoConcorrente/src/Topico7Semaforos/ThreadAtv4.java</file>
-            <file>file:/C:/Users/Mateu/Desktop/UTFPR-BCC/Programação%20Concorrente/Programa-oConcorrente/ProgramacaoConcorrente/src/Topico7Semaforos/Atividade4.java</file>
-            <file>file:/C:/Users/Mateu/Desktop/UTFPR-BCC/Programação%20Concorrente/Programa-oConcorrente/ProgramacaoConcorrente/src/Topico7Semaforos/Atividade3.java</file>
-            <file>file:/C:/Users/Mateu/Desktop/UTFPR-BCC/Programação%20Concorrente/Programa-oConcorrente/ProgramacaoConcorrente/src/Topico7Semaforos/ThreadIncAtv3.java</file>
+            <file>file:/C:/Users/Mateu/Desktop/UTFPR-BCC/Programação%20Concorrente/Programa-oConcorrente/ProgramacaoConcorrente/src/OneDimensionalStencil/CyclicBaarrier.java</file>
+            <file>file:/C:/Users/Mateu/Desktop/UTFPR-BCC/Programação%20Concorrente/Programa-oConcorrente/ProgramacaoConcorrente/src/OneDimensionalStencil/Basic.java</file>
+            <file>file:/C:/Users/Mateu/Desktop/UTFPR-BCC/Programação%20Concorrente/Programa-oConcorrente/ProgramacaoConcorrente/src/OneDimensionalStencil/ThreadCB.java</file>
+            <file>file:/C:/Users/Mateu/Desktop/UTFPR-BCC/Programação%20Concorrente/Programa-oConcorrente/ProgramacaoConcorrente/src/OneDimensionalStencil/ThreadLatch.java</file>
+            <file>file:/C:/Users/Mateu/Desktop/UTFPR-BCC/Programação%20Concorrente/Programa-oConcorrente/ProgramacaoConcorrente/src/OneDimensionalStencil/Phaaser.java</file>
+            <file>file:/C:/Users/Mateu/Desktop/UTFPR-BCC/Programação%20Concorrente/Programa-oConcorrente/ProgramacaoConcorrente/src/OneDimensionalStencil/ThreadPhaser.java</file>
+            <file>file:/C:/Users/Mateu/Desktop/UTFPR-BCC/Programação%20Concorrente/Programa-oConcorrente/ProgramacaoConcorrente/src/OneDimensionalStencil/Latch.java</file>
         </group>
     </open-files>
 </project-private>
