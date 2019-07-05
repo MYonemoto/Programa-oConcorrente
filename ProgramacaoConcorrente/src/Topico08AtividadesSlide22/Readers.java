@@ -51,4 +51,6 @@ public class Readers {
         System.out.println(" write");
         wlock.release();
     }
+    
+    
 }
